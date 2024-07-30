@@ -45,5 +45,44 @@ color: var(--secondary-color);
 .main_body{
   max-width: 800px;
   margin: 20px auto;
-  font-size: 20px;
+}
+
+.blog_preview{
+  width:100%;
+  border-bottom: 1px solid #f2f2f2;
+  padding: 20px;
+  border-radius: 10px;
+  cursor:pointer;
+}
+.blog_preview h2{
+  color:#006365;
+  font-size: 18px;
+}
+
+.blog_preview:hover{
+ box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.1);
+}
+
+.blog_preview button{
+  margin:10px;
+  padding:10px;
+  font-size: 14px;
+  border-radius: 5px;
+  color: white;
+  border:none;
+  background-color: var(--secondary-color);
+  cursor: pointer;
+}
+.loading_preview{
+  z-index: 10;
+  position:absolute;
+  top:0px;
+  left:0px;
+  background-color: rgba(0, 0, 0, 0.7);
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color:white;
 }
