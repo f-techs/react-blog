@@ -20,9 +20,10 @@
   max-width:800px;
   border-bottom: 1px solid #f2f2f2;
 }
-.main_nav h1{
+.main_nav h1 a{
   text-transform: uppercase;
   color:var(--primary-color);
+  text-decoration: none;
 }
 
 .nav_links{
@@ -85,4 +86,16 @@ color: var(--secondary-color);
   justify-content: center;
   align-items: center;
   color:white;
+}
+
+.messages_preview{
+  width:100%;
+  border-bottom: 1px solid #f2f2f2;
+  padding: 20px;
+  border-radius: 10px;
+  cursor:pointer;
+}
+
+.messages_preview:hover{
+  box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.1);
 }

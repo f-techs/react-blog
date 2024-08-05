@@ -13,25 +13,26 @@ const useFetch=(url)=>{
                     if(!res.ok)
                     {
                         throw new Error("Failed to fetch data")
+
                     }
+
                     return res.json()
+
                 })
-                .then((data)=>{
-                    setData(data)
+                .then((result)=>{
+                    setData(result)
                     setIsPending(false) // helps use to know the loading of the data
                     setIsError(null)
                 })
                 .catch((err)=>{
                     setIsError(err.message)
-                    console.log(err.message)
-                    console.log(isError)
                 })
-        }, 2000)
 
-    },[])
+        }, 1000)
+    },[url])
 
 
-    return [data, isPending, isError]
+    return [data, isPending, isError, ]
 }
 
 export default useFetch;
