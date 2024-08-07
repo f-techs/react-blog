@@ -1,3 +1,5 @@
+import {Link} from "react-router-dom";
+
 const BlogList = ({blogs, title})=>{ //destructing becos props is an object
     return (
         <>
@@ -8,7 +10,7 @@ const BlogList = ({blogs, title})=>{ //destructing becos props is an object
                         <div className="blog_preview" key={blog.id}>
                             <h2>{blog.title}</h2>
                             <p>Author: {blog.author}</p>
-                            {/*<button>Delete</button>*/}
+                            { <Link to={`/blogs/${blog.id}`}> <button className="blog_button">Read Blog</button> </Link>}
                         </div>
                     ))
                 }

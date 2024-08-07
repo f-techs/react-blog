@@ -7,8 +7,6 @@ import Loader from "../Loader.jsx";
 const Comment = () =>{
     const [data, isPending, isError] = useFetch('http://wedding-api.test/api/all-messages')
 
-    console.log(isPending)
-    console.log(data);
 
     return (
         <>

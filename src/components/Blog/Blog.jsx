@@ -20,7 +20,11 @@ const [data, isPending, isError] = useFetch('http://localhost:8000/blogs');
 
                 {/*{blogs && <BlogList blogs={blogs.filter((blog) => (blog.author === "John Doe"))}  title="John Doe's Blog"/>}*/}
                 {/*{blogs && <BlogList blogs={blogs.filter((blog) => (blog.author === "Jane Smith"))}  title="Jane Smith's Blog"/>}*/}
-
+            {/*// const handleDeleteFn = (id) => {*/}
+            {/*//     const filteredBlogs = blogs.filter((blog) => (blog.id !== id))*/}
+            {/*//     setBlogs(filteredBlogs)*/}
+            {/*//     console.log('clicked')*/}
+            {/*// }*/}
         </>
     )
 }
