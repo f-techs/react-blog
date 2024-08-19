@@ -1,11 +1,11 @@
-# ReactJS
+# ReactJS Blog
 A blog app with ReactJS.
-This app is developed to for learning and mastering of reactJS.
+This app is developed for learning and mastering of reactJS.
 
 # Features of App
 1. CRUD - You can Create, Read, Update and Delete a blog.
 2. Use of Modal as dialogue box to confirm blog deletion
-3. Navigating of Blogs and the view page using Next and Previous Button
+3. Navigating of Blogs using Next and Previous Button
 
 # Hooks, Functionalities and Components Used
 1. React useState Hook
