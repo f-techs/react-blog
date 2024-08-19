@@ -48,6 +48,7 @@
 .main_body {
     max-width: 800px;
     margin: 20px auto;
+    padding: 20px;
 }
 
 .blog_preview {
@@ -103,6 +104,9 @@
     margin: 10px 0;
     padding: 10px 0;
     border-bottom: 1px solid #f2f2f2;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 .blog_footer {
   margin: 10px 0;
@@ -192,3 +196,172 @@
     width: 150px;
     margin: 0 auto;
 }
+.blog_del_button{
+    margin: 10px 0;
+    padding: 10px;
+    font-size: 14px;
+    border-radius: 5px;
+    color: white;
+    border: none;
+    font-weight: bold;
+    background-color: red;
+    cursor: pointer;
+}
+
+.blog_content{
+    height: 400px;
+    margin-bottom:100px;
+}
+
+.blog_edit_button{
+    background-color: orange;
+    margin-right: 10px;
+    padding: 10px;
+    font-size: 14px;
+    border-radius: 5px;
+    color: white;
+    border: none;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.overlay{
+    position: fixed;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 50;
+    height: 100%;
+    width: 100%;
+    top:0;
+    left:0;
+}
+
+.modal {
+    position: absolute;
+    width: 50%;
+    height:50%;
+    background-color: white;
+    z-index: 100;
+    transform: translate(-50%, -50%);
+    top: 50%;
+    left: 50%;
+    display: flex;
+    flex-direction: column;
+    border-radius: 15px;
+}
+.modal_header{
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+    border-bottom: 1px solid darkgrey;
+}
+.modal_header h1 {
+    font-size: 1.5rem;
+}
+.modal_header .close_button{
+    font-weight: bold;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    font-size: 1.2rem;
+    border-radius: 100%;
+    height: 40px;
+    width: 40px;
+    background-color: #006365;
+    color:white;
+    border: none;
+    cursor:pointer;
+}
+
+.modal_content {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-bottom: 150px;
+}
+
+.modal_content .main_content{
+    width: 100%;
+    height: 100%;
+    padding: 30px;
+    font-size: 1.5rem;
+    text-align: center;
+}
+.modal_respond{
+    display: flex;
+    justify-content: space-between;
+    width: 200px;
+
+}
+
+.modal_respond button{
+    background-color: #ff5f1f;
+    width:max-content;
+    height: 40px;
+    color:white;
+    font-weight: bold;
+    border:none;
+    border-radius: 25px;
+    padding:20px;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+}
+
+.modal_respond button:first-child{
+    background-color: #006365;
+}
+
+/*small devices*/
+@media (max-width: 600px) {
+    .blog_content{
+        height: 400px;
+        margin-bottom:200px;
+    }
+}
+
+/*medium devices*/
+@media (min-width: 600px) and (max-width: 900px) {
+
+}
+
+
+
+
+/* Mobile styles first */
+/*.container {*/
+/*    width: 100%;*/
+/*}*/
+
+/* Tablet and larger devices */
+/*@media (min-width: 768px) {*/
+/*    .container {*/
+/*        width: 75%;*/
+/*    }*/
+/*}*/
+
+/* Desktop and larger devices */
+/*@media (min-width: 1024px) {*/
+/*    .container {*/
+/*        width: 60%;*/
+/*    }*/
+/*}*/
+
+
+/*@media (max-width: 600px) and (orientation: portrait) {*/
+/*    .header {*/
+/*        font-size: 18px;*/
+/*        text-align: center;*/
+/*    }*/
+/*    .content {*/
+/*        padding: 20px;*/
+/*    }*/
+/*    .sidebar {*/
+/*        display: none; !* Hide sidebar to maximize content area *!*/
+/*    }*/
+/*    .footer {*/
+/*        font-size: 12px;*/
+/*        text-align: center;*/
+/*    }*/
+/*}*/

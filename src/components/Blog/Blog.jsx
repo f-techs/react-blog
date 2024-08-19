@@ -1,6 +1,6 @@
 import BlogList from './BlogList.jsx'
 import useFetch from "../useFetch.jsx";
-import Loader from "../Loader.jsx";
+import Loader from "../UI/Loader.jsx";
 
 const Blog = () => {
 const [data, isPending, isError] = useFetch('http://localhost:8000/blogs');
@@ -16,7 +16,7 @@ const [data, isPending, isError] = useFetch('http://localhost:8000/blogs');
 
 
                 {isPending && <Loader errorStatus={isError}/>}
-                {data && <BlogList blogs={data} title="All Blogs" />}
+                {data && <BlogList blogs={data} title={ data.length > 0 ? 'All Blogs' : 'No available Blogs'} /> }
 
                 {/*{blogs && <BlogList blogs={blogs.filter((blog) => (blog.author === "John Doe"))}  title="John Doe's Blog"/>}*/}
                 {/*{blogs && <BlogList blogs={blogs.filter((blog) => (blog.author === "Jane Smith"))}  title="Jane Smith's Blog"/>}*/}

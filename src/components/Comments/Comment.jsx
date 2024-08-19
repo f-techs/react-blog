@@ -1,7 +1,7 @@
 import CommentList from "./CommentList.jsx";
 import useFetch from "../useFetch.jsx";
 import {useEffect, useState} from "react";
-import Loader from "../Loader.jsx";
+import Loader from "../UI/Loader.jsx";
 
 
 const Comment = () =>{
