@@ -1,8 +1,20 @@
-# React + Vite
+# ReactJS
+A blog app with ReactJS.
+This app is developed to for learning and mastering of reactJS.
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+# Features of App
+1. CRUD - You can Create, Read, Update and Delete a blog.
+2. Use of Modal as dialogue box to confirm blog deletion
+3. Navigating of Blogs and the view page using Next and Previous Button
 
-Currently, two official plugins are available:
+# Hooks and Functionality Used
+1. React useState Hook
+2. React useEffect Hook
+3. React useParams
+4. React Router
+5. React useNavigate
+6. Javascript fetch function
+7. Jasvascript async await function
+8. React Quill Text Editor
+   
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
