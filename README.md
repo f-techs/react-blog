@@ -9,14 +9,15 @@ This app is developed for learning and mastering of reactJS.
 
 # Hooks, Functionalities and Components Used
 1. React useState Hook
-2. React useEffect Hook
-3. React useParams
-4. React Router
-5. React useNavigate
-6. Javascript fetch function
-7. Jasvascript async await function
-8. React Quill Text Editor
-9. JSON Server
+2. ReactDOM.createPortal
+3. React useEffect Hook
+4. React useParams
+5. React Router
+6. React useNavigate
+7. Javascript fetch function
+8. Jasvascript async await function
+9. React Quill Text Editor
+10. JSON Server
 
 Click this 👉 link [https://react-blog-809ga6fmo-f-techs-projects.vercel.app/] for Demo
 
