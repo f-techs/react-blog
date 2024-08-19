@@ -18,5 +18,5 @@ This app is developed for learning and mastering of reactJS.
 8. React Quill Text Editor
 9. JSON Server
 
-Click this 👉 link [https://react-blog-809ga6fmo-f-techs-projects.vercel.app/](url) for Demo
+Click this 👉 link [https://react-blog-809ga6fmo-f-techs-projects.vercel.app/] for Demo
 
