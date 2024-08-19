@@ -96,7 +96,7 @@ const
             <>  {isPending && <Loader errorStatus={isError}/>}
                 {
                     <div className="create_main">
-                        <h2>Create New Blog</h2>
+                        <h2>Update Blog</h2>
                         <form onSubmit={handleSubmit}>
                             <div className="form_container">
                                 <label>Blog Category</label>

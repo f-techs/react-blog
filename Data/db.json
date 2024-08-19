@@ -1,24 +1,10 @@
 {
   "blogs": [
     {
-      "id": "2",
-      "category": "REACT",
-      "title": "test",
-      "author": "adjei",
-      "content": "<p>test</p>"
-    },
-    {
-      "id": "3",
+      "id": "1",
       "category": "LARAVEL",
       "title": "test",
       "author": "fred",
-      "content": "<p>testing laravel</p>"
-    },
-    {
-      "id": "4",
-      "category": "LARAVEL",
-      "title": "test",
-      "author": "test",
       "content": "<p>test</p>"
     }
   ]
