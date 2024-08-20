@@ -3,7 +3,7 @@ import useFetch from "../useFetch.jsx";
 import Loader from "../UI/Loader.jsx";
 
 const Blog = () => {
-const [data, isPending, isError] = useFetch('http://localhost:8000/blogs');
+const [data, isPending, isError] = useFetch('https://react-blog-f-techs.netlify.app/blogs');
 
 
     return (

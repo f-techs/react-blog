@@ -10,7 +10,7 @@ const BlogDetail = () => {
     const {id} = useParams();
     const [pageId, setPageId] = useState(id)
     const [blogs, setBlogs] = useState(null);
-    const [totalBlogs] = useFetch('http://localhost:8000/blogs');
+    const [totalBlogs] = useFetch('https://react-blog-f-techs.netlify.app/blogs');
     const navigate = useNavigate();
     const [blog, setBlog] = useState(null);
     const [isPending, setIsPending] = useState(true);
@@ -27,7 +27,7 @@ const BlogDetail = () => {
 
         const fetchData = async ()=>{
             try{
-            const fetchBlog = await fetch(`http://localhost:8000/blogs/${pageId}`);
+            const fetchBlog = await fetch(`https://react-blog-f-techs.netlify.app/blogs/${pageId}`);
             if(!fetchBlog.ok){
                 throw new Error("failed to fetch blog")
             }else{
@@ -40,7 +40,7 @@ const BlogDetail = () => {
                     navigate(`/blogs/${pageId}`, {replace: true})
                 }
             }
-            const fetchBlogs = await fetch('http://localhost:8000/blogs')
+            const fetchBlogs = await fetch('https://react-blog-f-techs.netlify.app/blogs')
             if(!fetchBlogs.ok){
                 throw new Error("failed to fetch blogs")
             }else{
@@ -114,7 +114,7 @@ const BlogDetail = () => {
         setDeleteId(id);
     }
     const blogDeletHandler = (id) => {
-        fetch(`http://localhost:8000/blogs/${id}`, {
+        fetch(`https://react-blog-f-techs.netlify.app/blogs/${id}`, {
             method: "DELETE"
         }).then((result) => {
             if (result) {

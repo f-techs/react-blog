@@ -10,7 +10,7 @@ const Create = () => {
     const [content, setContent]=useState(null)
     const [author, setAuthor] = useState('')
     const [category, setCategory] = useState('')
-    const [blogs] = useFetch('http://localhost:8000/blogs');
+    const [blogs] = useFetch('https://react-blog-f-techs.netlify.app/blogs');
     const navigate = useNavigate();
 
     const toolbarOptions = [
@@ -49,7 +49,7 @@ const Create = () => {
         }
 
 
-        fetch('http://localhost:8000/blogs', {
+        fetch('https://react-blog-f-techs.netlify.app/blogs', {
             method:'POST',
             headers:{"content-type":"application/json"},
             body: JSON.stringify(blog)
